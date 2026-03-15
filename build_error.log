@@ -1,0 +1,277 @@
+﻿node : X [ERROR] 
+"@tailwindcss/vite" 
+resolved to an ESM 
+file. ESM file cannot 
+be loaded by 
+`require`. See https://
+vite.dev/guide/troubles
+hooting.html#this-packa
+ge-is-esm-only for 
+more details. [plugin 
+externalize-deps]
+At line:1 char:1
++ node ./node_modules/v
+ite/bin/vite.js build 
+2>&1 | Out-File 
+-FilePath  ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (X [ERROR] "@t   
+ ai...ternalize-dep    
+s]:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+    node_modules/.pnpm/
+esbuild@0.21.5/node_mod
+ules/esbuild/lib/main.j
+s:1225:27:
+      1225 Γöé         
+let result = await 
+callback({
+           Γò╡         
+                   ^
+
+    at file:///C:/Users
+/91938/Downloads/b_ZWPJ
+tOmYILG-1773500014266/n
+ode_modules/.pnpm/vite@
+5.4.21_lightningcss@1.3
+1.1/node_modules/vite/d
+ist/node/chunks/dep-BK3
+b2jBa.js:66928:23
+    at requestCallbacks
+.on-resolve (C:\Users\9
+1938\Downloads\b_ZWPJtO
+mYILG-1773500014266\nod
+e_modules\.pnpm\esbuild
+@0.21.5\node_modules\es
+build\lib\main.js:1225:
+28)
+    at handleRequest (C
+:\Users\91938\Downloads
+\b_ZWPJtOmYILG-17735000
+14266\node_modules\.pnp
+m\esbuild@0.21.5\node_m
+odules\esbuild\lib\main
+.js:647:17)
+    at 
+handleIncomingPacket (C
+:\Users\91938\Downloads
+\b_ZWPJtOmYILG-17735000
+14266\node_modules\.pnp
+m\esbuild@0.21.5\node_m
+odules\esbuild\lib\main
+.js:672:7)
+    at 
+Socket.readFromStdout (
+C:\Users\91938\Download
+s\b_ZWPJtOmYILG-1773500
+014266\node_modules\.pn
+pm\esbuild@0.21.5\node_
+modules\esbuild\lib\mai
+n.js:600:7)
+    at Socket.emit 
+(node:events:519:28)
+    at addChunk (node:i
+nternal/streams/readabl
+e:561:12)
+    at readableAddChunk
+PushByteMode (node:inte
+rnal/streams/readable:5
+12:3)
+    at Readable.push (n
+ode:internal/streams/re
+adable:392:5)
+    at 
+Pipe.onStreamRead (node
+:internal/stream_base_c
+ommons:189:23)
+
+  This error came from 
+the "onResolve" 
+callback registered 
+here:
+
+    node_modules/.pnpm/
+esbuild@0.21.5/node_mod
+ules/esbuild/lib/main.j
+s:1150:20:
+      1150 Γöé       
+let promise = setup({
+           Γò╡         
+            ^
+
+    at setup (file:///C
+:/Users/91938/Downloads
+/b_ZWPJtOmYILG-17735000
+14266/node_modules/.pnp
+m/vite@5.4.21_lightning
+css@1.31.1/node_modules
+/vite/dist/node/chunks/
+dep-BK3b2jBa.js:66890:1
+8)
+    at handlePlugins (C
+:\Users\91938\Downloads
+\b_ZWPJtOmYILG-17735000
+14266\node_modules\.pnp
+m\esbuild@0.21.5\node_m
+odules\esbuild\lib\main
+.js:1150:21)
+    at 
+buildOrContextImpl (C:\
+Users\91938\Downloads\b
+_ZWPJtOmYILG-1773500014
+266\node_modules\.pnpm\
+esbuild@0.21.5\node_mod
+ules\esbuild\lib\main.j
+s:873:5)
+    at 
+Object.buildOrContext (
+C:\Users\91938\Download
+s\b_ZWPJtOmYILG-1773500
+014266\node_modules\.pn
+pm\esbuild@0.21.5\node_
+modules\esbuild\lib\mai
+n.js:699:5)
+    at C:\Users\91938\D
+ownloads\b_ZWPJtOmYILG-
+1773500014266\node_modu
+les\.pnpm\esbuild@0.21.
+5\node_modules\esbuild\
+lib\main.js:2023:15
+    at new Promise 
+(<anonymous>)
+    at Object.build (C:
+\Users\91938\Downloads\
+b_ZWPJtOmYILG-177350001
+4266\node_modules\.pnpm
+\esbuild@0.21.5\node_mo
+dules\esbuild\lib\main.
+js:2022:25)
+    at build (C:\Users\
+91938\Downloads\b_ZWPJt
+OmYILG-1773500014266\no
+de_modules\.pnpm\esbuil
+d@0.21.5\node_modules\e
+sbuild\lib\main.js:1873
+:51)
+    at 
+bundleConfigFile (file:
+///C:/Users/91938/Downl
+oads/b_ZWPJtOmYILG-1773
+500014266/node_modules/
+.pnpm/vite@5.4.21_light
+ningcss@1.31.1/node_mod
+ules/vite/dist/node/chu
+nks/dep-BK3b2jBa.js:668
+45:24)
+
+  The plugin 
+"externalize-deps" was 
+triggered by this 
+import
+
+    
+vite.config.js:5:24:
+      5 Γöé import 
+tailwindcss from 
+'@tailwindcss/vite';
+        Γò╡            
+             
+~~~~~~~~~~~~~~~~~~~
+
+[31mfailed to load 
+config from C:\Users\91
+938\Downloads\b_ZWPJtOm
+YILG-1773500014266\vite
+.config.js[39m
+[31merror during 
+build:
+Error: Build failed 
+with 1 error:
+node_modules/.pnpm/esbu
+ild@0.21.5/node_modules
+/esbuild/lib/main.js:12
+25:27: ERROR: [plugin: 
+externalize-deps] 
+"@tailwindcss/vite" 
+resolved to an ESM 
+file. ESM file cannot 
+be loaded by 
+`require`. See https://
+vite.dev/guide/troubles
+hooting.html#this-packa
+ge-is-esm-only for 
+more details.
+    at 
+failureErrorWithLog (C:
+\Users\91938\Downloads\
+b_ZWPJtOmYILG-177350001
+4266\node_modules\.pnpm
+\esbuild@0.21.5\node_mo
+dules\esbuild\lib\main.
+js:1472:15)
+    at C:\Users\91938\D
+ownloads\b_ZWPJtOmYILG-
+1773500014266\node_modu
+les\.pnpm\esbuild@0.21.
+5\node_modules\esbuild\
+lib\main.js:945:25
+    at 
+runOnEndCallbacks (C:\U
+sers\91938\Downloads\b_
+ZWPJtOmYILG-17735000142
+66\node_modules\.pnpm\e
+sbuild@0.21.5\node_modu
+les\esbuild\lib\main.js
+:1315:45)
+    at 
+buildResponseToResult (
+C:\Users\91938\Download
+s\b_ZWPJtOmYILG-1773500
+014266\node_modules\.pn
+pm\esbuild@0.21.5\node_
+modules\esbuild\lib\mai
+n.js:943:7)
+    at C:\Users\91938\D
+ownloads\b_ZWPJtOmYILG-
+1773500014266\node_modu
+les\.pnpm\esbuild@0.21.
+5\node_modules\esbuild\
+lib\main.js:970:16
+    at responseCallback
+s.<computed> (C:\Users\
+91938\Downloads\b_ZWPJt
+OmYILG-1773500014266\no
+de_modules\.pnpm\esbuil
+d@0.21.5\node_modules\e
+sbuild\lib\main.js:622:
+9)
+    at 
+handleIncomingPacket (C
+:\Users\91938\Downloads
+\b_ZWPJtOmYILG-17735000
+14266\node_modules\.pnp
+m\esbuild@0.21.5\node_m
+odules\esbuild\lib\main
+.js:677:12)
+    at 
+Socket.readFromStdout (
+C:\Users\91938\Download
+s\b_ZWPJtOmYILG-1773500
+014266\node_modules\.pn
+pm\esbuild@0.21.5\node_
+modules\esbuild\lib\mai
+n.js:600:7)
+    at Socket.emit 
+(node:events:519:28)
+    at addChunk (node:i
+nternal/streams/readabl
+e:561:12)[39m
