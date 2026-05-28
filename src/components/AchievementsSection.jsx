@@ -6,25 +6,25 @@ const achievements = [
     title: 'Contest Winner',
     description: 'Secured 2nd Prize in "Bit Banther" for analytical reasoning and 3rd Prize in "AI Art Binnacle" for Generative AI prompt engineering.',
     icon: Trophy,
-    color: 'from-yellow-500 to-orange-500'
+    color: 'from-purple-600 to-pink-600'
   },
   {
     title: 'Industry Certifications',
     description: 'AWS Certified Cloud Practitioner, IBM Java Developer, and Microsoft AI & ML Engineering Specialist.',
     icon: Award,
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-purple-600 to-pink-600'
   },
   {
     title: 'Technical Cohorts',
     description: 'Participant in Infosys Pragati: Path to Future (Cohort 7) and the AWS Skill Builder program.',
     icon: Star,
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-purple-600 to-pink-600'
   },
   {
     title: 'Coding Consistency',
     description: 'Solved 300+ DSA problems on LeetCode and GeeksforGeeks; earned the 100 Days Consistency Badge in Leetcode.',
     icon: GitBranch,
-    color: 'from-green-500 to-emerald-500'
+    color: 'from-purple-600 to-pink-600'
   }];
 
 
@@ -42,12 +42,12 @@ export default function AchievementsSection() {
             return (
               <div
                 key={index}
-                className="group glassmorphism glow-border rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(251,65,218,0.3)] transition-all duration-300 hover:border-pink-500/50 transform hover:scale-105">
+                className="group glassmorphism glow-border rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(147,51,234,0.3)] transition-all duration-300 hover:border-purple-500/50 transform hover:scale-105">
 
                 {/* Header with Icon */}
                 <div className={`bg-gradient-to-r ${achievement.color} p-1`}>
-                  <div className="bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 p-6 flex items-center gap-4">
-                    <div className={`w-14 h-14 rounded-lg bg-gradient-to-br ${achievement.color} flex items-center justify-center flex-shrink-0 group-hover:shadow-[0_0_20px_rgba(251,65,218,0.5)] transition-all duration-300`}>
+                  <div className="bg-gradient-to-br from-purple-600/10 via-purple-500/10 to-pink-600/10 p-6 flex items-center gap-4">
+                    <div className={`w-14 h-14 rounded-lg bg-gradient-to-br ${achievement.color} flex items-center justify-center flex-shrink-0 group-hover:shadow-[0_0_20px_rgba(147,51,234,0.5)] transition-all duration-300`}>
                       <IconComponent className="w-7 h-7 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-white group-hover:neon-pink transition-colors">

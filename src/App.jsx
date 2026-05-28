@@ -1,8 +1,9 @@
 import Navbar from '@/components/Navbar';
+import BackgroundParticles from '@/components/BackgroundParticles';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import SkillsSection from '@/components/SkillsSection';
-import ToolsSection from '@/components/ToolsSection';
+
 import ProjectsSection from '@/components/ProjectsSection';
 import ResumeSection from '@/components/ResumeSection';
 import InternshipsSection from '@/components/InternshipsSection';
@@ -14,6 +15,7 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full">
+      <BackgroundParticles />
       <Navbar />
       
       {/* Main Content Sections */}
@@ -35,7 +37,7 @@ export default function Home() {
       </div>
 
       <SkillsSection />
-      <ToolsSection />
+     
 
       <div className="relative py-12 px-4">
         <div className="max-w-6xl mx-auto">

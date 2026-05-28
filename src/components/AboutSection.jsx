@@ -9,15 +9,13 @@ export default function AboutSection() {
           {/* Avatar */}
           <div className="flex justify-center lg:order-1">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-magenta-500 rounded-2xl opacity-20 blur-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl opacity-20 blur-2xl"></div>
               <div className="absolute inset-0 rounded-2xl glow-border overflow-hidden">
                 <img
-                  src="/profile-image.jpg"
+                  src="/profile-image.png"
                   alt="Professional profile image"
-                  fill
-                  className="object-cover w-full h-full"
-                  priority />
-                
+                  className="object-cover w-full h-full block"
+                />
               </div>
             </div>
           </div>
@@ -30,15 +28,17 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I am a software developer who enjoys building applications and learning new technologies. I like turning ideas into real products and exploring new tools in software development.
+             I am a Full-Stack Developer and ML Enthusiast specializing in the intersection of scalable architecture and Machine Learning. Currently pursuing a B.Tech in AI & Data Science, I build high-performance applications using Java Spring Boot, React.js, and AWS. My foundation is built on algorithmic optimization, with over 300+ DSA problems solved, and a commitment to writing clean, modular code using SOLID principles.
+
               </p>
 
               <p className="text-lg text-gray-300 leading-relaxed">
-                I enjoy working on projects, experimenting with new technologies, and improving my coding skills every day. My passion lies in creating elegant solutions to complex problems and building meaningful applications that make a difference.
+              Beyond core development, I focus on engineering "smart" solutions by integrating Generative AI and LLMs into production-ready backends. By leveraging the AWS ecosystem—including EKS, Lambda, and S3—I ensure these intelligent systems are cloud-native, resilient, and capable of scaling to meet modern demands. My goal is to deliver seamless, end-to-end products that turn complex data into actionable insights.
+                
               </p>
 
               <div className="pt-4">
-                <p className="text-blue-400 font-semibold mb-4">Interested in collaborating on innovative projects? Let's connect!</p>
+                <p className="font-semibold mb-4 neon-text">Interested in collaborating on innovative projects? Let's connect!</p>
               </div>
             </div>
           </div>

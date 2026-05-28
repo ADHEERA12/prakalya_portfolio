@@ -4,25 +4,25 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
 {
   id: 1,
-  title: 'AI Chat Application',
-  description: 'Intelligent chatbot powered by machine learning algorithms. Real-time messaging with natural language processing capabilities.',
-  tags: ['Python', 'React', 'AI/ML'],
-  github: '#',
-  demo: '#'
+  title: 'AI Product Intelligence Engine',
+  description: 'A cloud-native Chrome extension that synthesizes thousands of product reviews into structured pros/cons using Spring AI and Gemini API, reducing research time by 60%.',
+  tags: ['Java Spring Boot', 'React', 'Gemini API', 'AWS EKS'],
+  github: '#', // Add your GitHub link here
+  demo: '#'   // Add your demo link here
 },
 {
   id: 2,
-  title: 'Full Stack E-Commerce',
-  description: 'Complete e-commerce platform with payment integration, user authentication, and real-time inventory management.',
-  tags: ['React', 'Node.js', 'MongoDB'],
+  title: 'Non Emergency medical Transport management System',
+  description: 'A high-availability backend for service booking featuring JWT authentication and automated CI/CD. Orchestrated with Amazon EKS to ensure seamless scaling and reliability.',
+  tags: ['Java', 'MySQL', 'Amazon EKS', 'GitHub Actions'],
   github: '#',
   demo: '#'
 },
 {
   id: 3,
-  title: 'Data Visualization Dashboard',
-  description: 'Interactive dashboard for analyzing large datasets with real-time updates and custom visualization options.',
-  tags: ['React', 'D3.js', 'TypeScript'],
+  title: 'AI-Powered Storybook Platform',
+  description: 'An interactive application that generates personalized children’s stories and illustrations using Generative AI and prompt engineering, optimized for cloud-native deployment.',
+  tags: ['Spring AI', 'React', 'Cloud Deployment', 'Python'],
   github: '#',
   demo: '#'
 },
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
           {projects.map((project) =>
           <div
             key={project.id}
-            className="group glassmorphism glow-border rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(251,65,218,0.4)] transition-all duration-300 hover:border-pink-500/50 transform hover:scale-105">
+            className="group glassmorphism glow-border rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(147,51,234,0.4)] transition-all duration-300 hover:border-purple-500/50 transform hover:scale-105">
             
               {/* Project Image Placeholder */}
               <div className="h-48 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 flex items-center justify-center overflow-hidden relative">
@@ -87,7 +87,7 @@ export default function ProjectsSection() {
                   {project.tags.map((tag) =>
                 <span
                   key={tag}
-                  className="px-3 py-1 text-xs font-semibold rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30">
+                  className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/20 text-purple-300 border border-purple-400/30">
                   
                       {tag}
                     </span>
@@ -98,14 +98,14 @@ export default function ProjectsSection() {
                 <div className="flex gap-4 pt-4">
                   <a
                   href={project.github}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-blue-500/50 text-blue-400 hover:bg-blue-500/10 transition-all duration-300">
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-purple-500/50 text-purple-400 hover:bg-purple-500/10 transition-all duration-300">
                   
                     <Github size={18} />
                     <span className="text-sm">Code</span>
                   </a>
                   <a
                   href={project.demo}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-[0_0_15px_rgba(251,65,218,0.3)] transition-all duration-300">
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-[0_0_15px_rgba(147,51,234,0.4)] transition-all duration-300">
                   
                     <ExternalLink size={18} />
                     <span className="text-sm">Demo</span>

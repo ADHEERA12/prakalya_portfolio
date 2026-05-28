@@ -33,13 +33,9 @@ export default function Navbar() {
     }>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AI</span>
-            </div>
-            <span className="text-lg font-bold neon-text hidden sm:inline">Developer</span>
-          </a>
+          <div className="flex items-center">
+            <a href="#home" aria-label="PRAKALYA S home" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8b5cf6] to-[#ff66b3]">PRAKALYA S</a>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
@@ -50,7 +46,7 @@ export default function Navbar() {
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 relative group">
               
                 {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </a>
             )}
           </div>
@@ -71,10 +67,10 @@ export default function Navbar() {
           <a
             key={link.name}
             href={link.href}
-            className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-blue-500/10 rounded-lg transition-colors"
+            className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-purple-500/10 rounded-lg transition-colors"
             onClick={() => setIsOpen(false)}>
             
-                {link.name}
+                {link.name} 
               </a>
           )}
           </div>

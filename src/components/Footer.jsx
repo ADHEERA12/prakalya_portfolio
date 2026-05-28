@@ -9,17 +9,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AI</span>
-              </div>
-              <span className="text-lg font-bold neon-text">Developer</span>
-            </div>
-            <p className="text-gray-400 text-sm">
-              Building the future with code, creativity, and innovation.
-            </p>
-          </div>
+          
 
           {/* Quick Links */}
           <div>
@@ -63,7 +53,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-blue-500/20 pt-8">
           <p className="text-center text-gray-500 text-sm">
-            © {currentYear} Your Name. All rights reserved. | Built with React, Next.js, and Tailwind CSS
+            © {currentYear} Prakalya S. All rights reserved. | Built with  React js, Tailwind CSS
           </p>
         </div>
       </div>
